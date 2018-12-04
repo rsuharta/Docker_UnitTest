@@ -41,7 +41,7 @@ Test Run Successful.
 
 ```
 
-Note: to avoid "The TAG variable is not set. Defaulting to a blank string" message, please append "TAG=[someversion]" in front of the docker command, e.g. TAG=1.2.3.4 docker-compose -f docker-compose.yml run --rm unittests.
+Note: to avoid "The TAG variable is not set. Defaulting to a blank string" message, please append "TAG=[someversion]" in front of the docker command, e.g. TAG=1.2.3.4 docker-compose -f docker-compose.yml build app.
 The "TAG" is only required when docker-compose build the app service.
 
 # Docker Ignore
