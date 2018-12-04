@@ -1,7 +1,7 @@
 # How to run the unit test
 
 ```shell
-mkdir -m777 "$(pwd)"/UnitTestResults  
+mkdir -m777 "$(pwd)"/UnitTestResults  # --> optional, may be required when running on the build agent so it can perform clean build
 docker-compose -f docker-compose.yml run --rm unittests
 ```
 
