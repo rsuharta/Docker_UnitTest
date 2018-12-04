@@ -1,7 +1,9 @@
 # How to run the unit test
 
+```shell
 mkdir -m777 "$(pwd)"/UnitTestResults  
 docker-compose -f docker-compose.yml run --rm unittests
+```
 
 Note: Refer to the unittests.dockerfile allocated outside of this directory.
 
