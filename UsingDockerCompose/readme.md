@@ -22,12 +22,12 @@ Removing intermediate container 5f93d3b0ebd0
  ---> e98547fbaf3a
 
 Successfully built e98547fbaf3a
-Successfully tagged dms2:unittest
+Successfully tagged app:unittest
 Image for service unittests was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 Build started, please wait...
 Build completed.
 
-Test run for /test/src/DMS2.UnitTests/bin/Debug/netcoreapp2.1/DMS2.UnitTests.dll(.NETCoreApp,Version=v2.1)
+Test run for /test/src/UnitTests/bin/Debug/netcoreapp2.1/UnitTests.dll(.NETCoreApp,Version=v2.1)
 Microsoft (R) Test Execution Command Line Tool Version 15.9.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
