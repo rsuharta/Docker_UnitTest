@@ -38,3 +38,34 @@ Total tests: 1. Passed: 1. Failed: 0. Skipped: 0.
 Test Run Successful.
 
 ```
+
+# Docker Ignore
+
+The docker ignore file to ignore the listed files/folders.  Without the docker ignore, we might be getting the following possible error:
+
+```console
+
+The TAG variable is not set. Defaulting to a blank string.
+Building unittests
+[24012] Failed to execute script docker-compose
+Traceback (most recent call last):
+  File "site-packages\docker\utils\build.py", line 96, in create_archive
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\ronald.suharta\\source\\repos\\app\\src\\.vs\\app\\v15\\Server\\sqlite3\\db.lock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "docker-compose", line 6, in <module>
+  File "compose\cli\main.py", line 71, in main
+  File "compose\cli\main.py", line 127, in perform_command
+  File "compose\cli\main.py", line 845, in run
+  File "compose\cli\main.py", line 1297, in run_one_off_container
+  File "compose\service.py", line 316, in create_container
+  File "compose\service.py", line 352, in ensure_image_exists
+  File "compose\service.py", line 1067, in build
+  File "site-packages\docker\api\build.py", line 154, in build
+  File "site-packages\docker\utils\build.py", line 31, in tar
+  File "site-packages\docker\utils\build.py", line 100, in create_archive
+OSError: Can not read file in context: C:\Users\ronald.suharta\source\repos\app\src\.vs\app\v15\Server\sqlite3\db.lock
+
+```
